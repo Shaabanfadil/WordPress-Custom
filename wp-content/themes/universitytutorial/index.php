@@ -26,9 +26,13 @@
         <?php the_excerpt();?>
         <p><a class="btn btn--blue" href="<?php the_permalink();?>">continue reading &raquo;</a></p>
         </div>
-       
+      
+
       </div>
+       <!--Add pagination -->
+      
     <?php }
+     echo paginate_links();
   ?>	
 
 			
