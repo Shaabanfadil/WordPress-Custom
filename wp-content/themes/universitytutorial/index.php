@@ -16,15 +16,15 @@
   	while ( have_posts() ) {
       the_post();?>
       <div class="post-item">
-        <h2>
+        <h2 class="headline headline--medium headline--post-title">
           <a href="<?php  the_permalink()?>"><?php the_title();?></a>
         </h2>
         <div class="metabox">
-          <P>Posted By: <?php the_author();?> on <?php the_date();?> in <?php ?></P>
+          <P>Posted By: <?php the_author_posts_link();?> on <?php the_time('n.j.y');?> in <?php echo get_the_category_list(', ');?></P>
         </div>
         <div class="generic-contet>">
         <?php the_excerpt();?>
-        <p><a href="<?php the_permalink();?>">continue reading &raquo;</a></p>
+        <p><a class="btn btn--blue" href="<?php the_permalink();?>">continue reading &raquo;</a></p>
         </div>
        
       </div>
