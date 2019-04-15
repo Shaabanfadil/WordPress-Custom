@@ -118,3 +118,27 @@ function university_features(){
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
+
+/**
+ * adjust cusstom queries for post type "event".
+ */
+
+function university_adjust_queries($query){
+	if(!is_admin() AND is_post_type_archive('event') AND $query->is_main_query() ){
+		$today = date('Ymd');
+		//$query->set('posts_per_page', '1');
+		$query->set('meta_key', 'event_date');
+		$query-> set('orderby', 'meta_value_num');
+		$query-> set('order', 'ASC');
+		$query-> set('meta_query', array(
+			array(
+			  'key' => 'event_date',
+			  'compare' => '>=',
+			  'value' => $today,
+			  'type' =>'numaric'
+			)
+	
+		  ));
+	}
+}
+ add_action( 'pre_get_posts', 'university_adjust_queries' );
