@@ -36,7 +36,7 @@ function event_post_type() {
 		'label'                 => __( 'Event', 'Post Type General Name', 'text_domain' ),
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'comments' ),
 		'taxonomies'            => array( 'category', 'post_tag' ),
 		'hierarchical'          => false,
 		'public'                => true,
