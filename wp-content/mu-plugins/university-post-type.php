@@ -8,7 +8,7 @@ function event_post_type() {
 		'singular_name'         => _x( 'Event', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Event', 'text_domain' ),
 		'name_admin_bar'        => __( 'Event', 'text_domain' ),
-		'archives'              => __( 'Item Archives', 'text_domain' ),
+		'archives'              => __( 'Event Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Event:', 'text_domain' ),
 		'all_items'             => __( 'All Events', 'text_domain' ),
@@ -61,11 +61,11 @@ add_action( 'init', 'event_post_type', 0 );
 function campus_post_type(){
 	
 	$labels = array(
-		'name'                  => _x( 'Campsuses', 'Post Type General Name', 'text_domain' ),
+		'name'                  => _x( 'Campuses', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Campus', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Campuses', 'text_domain' ),
 		'name_admin_bar'        => __( 'Campus', 'text_domain' ),
-		'archives'              => __( 'Item Archives', 'text_domain' ),
+		'archives'              => __( 'Campus Archives', 'text_domain' ),
 		'attributes'            => __( 'Item Attributes', 'text_domain' ),
 		'parent_item_colon'     => __( 'Parent Campus:', 'text_domain' ),
 		'all_items'             => __( 'All Campuses', 'text_domain' ),
