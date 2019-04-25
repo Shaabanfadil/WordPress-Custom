@@ -15,6 +15,7 @@
     <h2 class="headline headline--small-plus t-center">Upcoming Events</h2>
     
     <?php 
+    //Display post type in front end
     $today = date('Ymd');
     $homePageEvents = new WP_Query(array(
       'post_type' => 'event',
@@ -28,7 +29,7 @@
           'compare' => '>=',
           'value' => $today,
           'type' =>'numaric'
-        ),
+        )
 
       )
       
