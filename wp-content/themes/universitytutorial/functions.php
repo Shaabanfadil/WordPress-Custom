@@ -120,7 +120,7 @@ function university_features(){
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
- * adjust cusstom queries for post type "event".
+ * adjust custom queries for post type "event".
  */
 
 function university_adjust_queries($query){

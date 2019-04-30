@@ -6,7 +6,7 @@
 
 <h1 class="page-banner__title">All Programs</h1>
       <div class="page-banner__intro">
-        <p>There is something for everyone. Have a look</p>
+        <p>There is something for everyone. Have a look around</p>
       </div>
     </div>  
   </div>
