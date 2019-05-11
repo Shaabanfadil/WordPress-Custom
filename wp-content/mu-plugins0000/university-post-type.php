@@ -225,6 +225,7 @@ function professors_post_type() {
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
+		'show_in_rest'          => true,
 	);
 	register_post_type( 'professors', $args );
 
