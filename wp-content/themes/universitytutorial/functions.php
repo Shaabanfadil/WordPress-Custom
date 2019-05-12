@@ -38,7 +38,7 @@ function university_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	add_theme_support( 'post-thumbnails' );
+
 
 
 
@@ -113,6 +113,9 @@ add_action( 'after_setup_theme', 'university_features');
 function university_features(){
 
 	add_theme_support('title-tag');
+	add_theme_support( 'post-thumbnails' );
+	add_image_size('professorLandscape', 400 , 260 , true );
+	add_image_size('professorPortrait', 480 , 650 , true );
 }
 /**
  * Implement the Custom Header feature.
