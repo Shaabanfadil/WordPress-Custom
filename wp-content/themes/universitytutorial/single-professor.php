@@ -17,7 +17,15 @@ while(have_posts()){
 
  
     <div class="generic-content">
+     <div class="row group">
+       <div class="one-third">
+       <?php the_post_thumbnail() ?>
+    
+     </div>
+    <div class="two-third">
     <?php the_content();?>
+    </div>
+    </div>
     </div>
   
    <!-- Loop through array post type field object-->
