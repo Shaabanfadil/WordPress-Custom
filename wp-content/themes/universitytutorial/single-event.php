@@ -26,9 +26,9 @@ while(have_posts()){
     <?php the_content();?>
     </div>
   
-   <!-- Loop through array post object-->
+   <!-- Loop through array post type field object-->
     <?php 
-    $relatedprograms = get_field('related_program');
+    $relatedprograms = get_field('related_programs');
   if($relatedprograms){
     echo '<hr class="section-break"';
   echo '<h2 class="headline headline--medium"><strong>Related Program(s)</strong></h2>';
