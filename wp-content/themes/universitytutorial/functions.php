@@ -192,4 +192,14 @@ if(!is_admin() AND is_post_type_archive('program') AND $query->is_main_query() )
 }
  add_action( 'pre_get_posts', 'university_adjust_queries' );
 
+
+ // Google Map Api function, target $api from google
+ function universitymapKey($api){
+		$api['key'] = 'AIzaSyCS4_3WpHnPnu94qGFwmXoHNpHhccfu314';
+		return $api;
+ }
+
+ add_filter('acf/fields/google+map/api','universitymapKey');
+  
+
  
