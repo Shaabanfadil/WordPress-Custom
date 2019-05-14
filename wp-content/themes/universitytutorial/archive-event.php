@@ -1,5 +1,15 @@
-<?php get_header();?>
+<?php get_header();
+ the_post(); 
+ //call pageBanner function from function.php
+ pageBanner(array(
+   'title' => 'All Events',
+   'subtitle' => 'See what is going in our world.',
+   
+ ));
+?>
 
+
+<!--
 <div class="page-banner__bg-image" style="background-image:url(<?php echo get_theme_file_uri('images/ocean.jpg')?>);"></div>
     <div class="page-banner__content container container--narrow">
    
@@ -9,7 +19,7 @@
         <p>See what is going in our world.</p>
       </div>
     </div>  
-  </div>
+  </div>-->
 
   <div class="container container--narrow page-section">
 

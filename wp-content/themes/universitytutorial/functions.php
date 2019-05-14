@@ -21,6 +21,7 @@ if ( ! function_exists( 'university_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 
+ //Pagebanner Function 
 function pageBanner($args = NULL){
 	//php login will live here
 //if no title, subtitle, photo is not  provided by user, fallback to default.
@@ -145,7 +146,7 @@ add_action( 'wp_enqueue_scripts', 'university_scripts' );
 
 add_action( 'after_setup_theme', 'university_features');
 
-//add title to browser page
+//add title , thumbnail, image size to browser page
 function university_features(){
 
 	add_theme_support('title-tag');
